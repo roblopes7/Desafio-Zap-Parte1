@@ -1,0 +1,17 @@
+CREATE SEQUENCE seq_produto
+    INCREMENT 1
+    MINVALUE 1
+    MAXVALUE 9223372036854775807
+    START 1
+    CACHE 1;
+
+CREATE TABLE PRODUTO (
+	idproduto INTEGER PRIMARY KEY DEFAULT nextval('seq_produto'),
+	nome VARCHAR ( 255 ) NOT NULL,
+	descricao VARCHAR ( 255 ),
+	preco NUMERIC NOT NULL,
+	data_gravacao TIMESTAMP NOT NULL
+);
+
+ALTER SEQUENCE seq_produto
+OWNED BY produto.idproduto;
