@@ -1,0 +1,23 @@
+version: "3"
+services:
+  app:
+    container_name: genesis
+    image: roblopes7/genesis:1.0
+    build: ./
+    ports:
+      - 8080:8080
+    restart: unless-stopped
+    depends_on:
+      - postgresdb
+
+  postgresdb:
+    image: roblopes7/postgres:latest
+    container_name: postgresdb
+    volumes:
+      - <<Caminho banco local>>:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_PASSWORD=q1w2e3r4
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=zap
