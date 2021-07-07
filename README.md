@@ -1,5 +1,8 @@
 # Desafio-Zap-Parte1
 
+
+Projeto realizado para aprendizado de estrutura web pela Zap Software e Soluções, requisitos da parte 1 concluídos.
+
 1) Ter instalado Docker na máquina.
 
 2) Portas 5432 e 8080 devem estar livres para uso da API.
@@ -17,4 +20,3 @@
 Para acessar o Swagger da API use a url http://localhost:8080/swagger-ui.html
 
 
-Projeto realizado para aprendizado de estrutura web pela Zap Software e Soluções, requisitos da parte 1 concluídos.
