@@ -15,3 +15,6 @@
 7) Executar comando: docker-compose up
 
 Para acessar o Swagger da API use a url http://localhost:8080/swagger-ui.html
+
+
+Projeto realizado para aprendizado de estrutura web pela Zap Software e Soluções, requisitos da parte 1 concluídos.
